@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Universe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <!-- start header -->
+    <header class="container text-center mt-3 mb-3">
+        <h1>AI Universe Hub</h1>
+        <!-- show all button -->
+        <div class=" my-5 text-center">
+            <button onclick="sortByDate(apiData[0])" type="button" class="btn btn-danger">Sort By
+                Date</button>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start main section -->
+    <main>
+
+        <!-- loader -->
+        <section id="loader" class="d-none">
+            <div style="height: 300px;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+        <!-- card section -->
+        <section class="container mt-5">
+            <div>
+                <div id="main-container" class="row row-cols-1 row-cols-md-3 g-4">
+                </div>
+            </div>
+        </section>
+
+        <!-- modal section start -->
+        <section>
+
+        </section>
+        <!-- modal section end-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="modal-body" class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- show all button -->
+        <div id="remove" class=" my-5 text-center">
+            <button id="see-more-btn" onclick="showFullData()" type="button" class="btn btn-danger">See
+                More</button>
+        </div>
+
+
+    </main>
+    <!-- start main section -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d9c4d4fd98.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
